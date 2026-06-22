@@ -405,8 +405,8 @@ class MephSeo_Plugin
 		}
 
 		wp_add_dashboard_widget(
-			"myelophone_seo_dashboard_widget",
-			__("MyelophOne SEO", "myelophone-seo"),
+			"myelophone_dashboard_widget",
+			__("MyelophOne", "myelophone-seo"),
 			[$this, "render_dashboard_widget"],
 		);
 	}
@@ -418,8 +418,8 @@ class MephSeo_Plugin
 	 */
 	public function render_dashboard_widget()
 	{
-		echo '<div class="meph-seo-dashboard-widget">';
-		$this->render_dashboard_widget_section();
+		echo '<div class="myelophone-dashboard-widget meph-seo-dashboard-widget">';
+		do_action("myelophone_dashboard_widget_sections");
 		echo "</div>";
 	}
 
