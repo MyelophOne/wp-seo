@@ -89,7 +89,13 @@ class MephSeo_Plugin
 	{
 		global $post;
 
-		$is_seo_page = strpos($hook, "myelophone_page_myelophone-seo") !== false;
+		$screen = function_exists("get_current_screen") ? get_current_screen() : null;
+		$screen_id = $screen && isset($screen->id) ? (string) $screen->id : "";
+		$page = sanitize_key((string) filter_input(INPUT_GET, "page", FILTER_UNSAFE_RAW));
+		$is_seo_page =
+			$page === MephSeo_Settings::PAGE ||
+			strpos((string) $hook, MephSeo_Settings::PAGE) !== false ||
+			strpos($screen_id, MephSeo_Settings::PAGE) !== false;
 		$is_editor = in_array($hook, ["post.php", "post-new.php"], true);
 		$is_dashboard = $hook === "index.php";
 		$admin_action = sanitize_text_field((string) filter_input(INPUT_GET, "action", FILTER_UNSAFE_RAW));
@@ -117,7 +123,7 @@ class MephSeo_Plugin
 			"myelophone-seo-admin-style",
 			MYELOPHONE_SEO_URL . "assets/css/admin.css",
 			$style_dependencies,
-			MYELOPHONE_SEO_VERSION,
+			$this->asset_version("assets/css/admin.css"),
 			"all",
 		);
 
@@ -129,7 +135,7 @@ class MephSeo_Plugin
 			"myelophone-seo-admin-script",
 			MYELOPHONE_SEO_URL . "assets/js/admin.js",
 			["jquery"],
-			MYELOPHONE_SEO_VERSION,
+			$this->asset_version("assets/js/admin.js"),
 			true,
 		);
 
@@ -151,6 +157,19 @@ class MephSeo_Plugin
 
 		wp_enqueue_media();
 		wp_enqueue_style("dashicons");
+	}
+
+	/**
+	 * Asset version.
+	 *
+	 * @param string $relative_path Asset path relative to plugin root.
+	 * @return string
+	 */
+	private function asset_version($relative_path)
+	{
+		$path = MYELOPHONE_SEO_DIR . ltrim($relative_path, "/\\");
+
+		return file_exists($path) ? (string) filemtime($path) : MYELOPHONE_SEO_VERSION;
 	}
 
 	/**
