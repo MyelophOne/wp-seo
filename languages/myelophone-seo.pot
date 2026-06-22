@@ -1,0 +1,918 @@
+# Copyright (C) 2026 Aliaksandr Ivanou
+# This file is distributed under the GPLv2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: MyelophOne SEO 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/myelophone-seo\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-06-20T17:41:43+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: myelophone-seo\n"
+
+#. Plugin Name of the plugin
+#: myelophone-seo.php
+#: includes/Admin/Page.php:44
+#: includes/Admin/Page.php:101
+#: includes/Elementor.php:146
+#: includes/MetaBox.php:44
+msgid "MyelophOne SEO"
+msgstr ""
+
+#. Plugin URI of the plugin
+#: myelophone-seo.php
+msgid "https://github.com/MyelophOne/wp-seo"
+msgstr ""
+
+#. Description of the plugin
+#: myelophone-seo.php
+msgid "SEO extension for MyelophOne Core with metadata, schema, redirects, robots.txt, social previews, and WooCommerce support."
+msgstr ""
+
+#. Author of the plugin
+#: myelophone-seo.php
+msgid "Aliaksandr Ivanou"
+msgstr ""
+
+#. Author URI of the plugin
+#: myelophone-seo.php
+msgid "https://github.com/aleksivanou"
+msgstr ""
+
+#: includes/Admin/Page.php:45
+msgid "SEO"
+msgstr ""
+
+#: includes/Admin/Page.php:148
+msgid "Dashboard"
+msgstr ""
+
+#: includes/Admin/Page.php:149
+msgid "Settings"
+msgstr ""
+
+#: includes/Admin/Page.php:150
+#: includes/Admin/Page.php:242
+msgid "Redirects"
+msgstr ""
+
+#: includes/Admin/Page.php:151
+msgid "404 Stats"
+msgstr ""
+
+#: includes/Admin/Page.php:152
+msgid "Integrations"
+msgstr ""
+
+#: includes/Admin/Page.php:153
+msgid "SOS"
+msgstr ""
+
+#: includes/Admin/Page.php:170
+msgid "MyelophOne SEO settings saved successfully."
+msgstr ""
+
+#: includes/Admin/Page.php:179
+msgid "Search engines are currently discouraged from indexing this site. Disable WordPress noindex to make the site visible to search engines."
+msgstr ""
+
+#: includes/Admin/Page.php:180
+#: includes/Admin/Page.php:191
+msgid "Allow search engines now"
+msgstr ""
+
+#: includes/Admin/Page.php:190
+msgid "Global NoIndex is enabled in MyelophOne SEO. Search engines are being asked not to index this site."
+msgstr ""
+
+#: includes/Admin/Page.php:200
+msgid "SEO quarantine mode is enabled. Public pages return 503 until quarantine is disabled."
+msgstr ""
+
+#: includes/Admin/Page.php:209
+msgid "Sitemap inflation alert: the sitemap URL count increased sharply during the last SOS check."
+msgstr ""
+
+#: includes/Admin/Page.php:210
+msgid "Dismiss"
+msgstr ""
+
+#. translators: 1: title variable, 2: site name variable, 3: excerpt variable, 4: separator variable, 5: brand variable, 6: price variable, 7: primary category variable.
+#: includes/Admin/Page.php:228
+#, php-format
+msgid "Use %1$s, %2$s, %3$s, %4$s, %5$s, %6$s, %7$s and more."
+msgstr ""
+
+#: includes/Admin/Page.php:240
+msgid "Metadata"
+msgstr ""
+
+#: includes/Admin/Page.php:240
+#: includes/Admin/Page.php:241
+msgid "On"
+msgstr ""
+
+#: includes/Admin/Page.php:240
+#: includes/Admin/Page.php:241
+msgid "Off"
+msgstr ""
+
+#: includes/Admin/Page.php:240
+msgid "Titles, descriptions, canonical and robots meta."
+msgstr ""
+
+#: includes/Admin/Page.php:241
+msgid "Schema"
+msgstr ""
+
+#: includes/Admin/Page.php:241
+msgid "Unified JSON-LD graph for pages, products and breadcrumbs."
+msgstr ""
+
+#: includes/Admin/Page.php:242
+msgid "Active redirect rules."
+msgstr ""
+
+#: includes/Admin/Page.php:243
+msgid "404 URLs"
+msgstr ""
+
+#: includes/Admin/Page.php:243
+msgid "Logged missing URLs for redirect planning and cleanup."
+msgstr ""
+
+#: includes/Admin/Page.php:247
+msgid "SEO Toolkit"
+msgstr ""
+
+#: includes/Admin/Page.php:249
+msgid "Manage metadata, schema, social previews, WooCommerce product SEO, canonical URLs, XML sitemaps, IndexNow, redirects, 404 monitoring, robots.txt rules, archive controls, URL transliteration, and SEO SOS tools: emergency 503 mode, sitemap spike alerts, suspicious root-file checks, monitored URLs, and request guards."
+msgstr ""
+
+#: includes/Admin/Page.php:252
+msgid "Recommended product snippets"
+msgstr ""
+
+#: includes/Admin/Page.php:252
+msgid "Used automatically for WooCommerce products when a product does not have custom SEO fields. The default template keeps product name, brand, price and availability in a search-friendly order."
+msgstr ""
+
+#: includes/Admin/Page.php:253
+msgid "Variables"
+msgstr ""
+
+#: includes/Admin/Page.php:254
+msgid "Elementor compatible"
+msgstr ""
+
+#: includes/Admin/Page.php:254
+msgid "The metabox saves regular post meta and works alongside Elementor-edited content."
+msgstr ""
+
+#: includes/Admin/Page.php:272
+msgid "Core SEO"
+msgstr ""
+
+#: includes/Admin/Page.php:273
+msgid "Enable metadata output"
+msgstr ""
+
+#: includes/Admin/Page.php:273
+msgid "Outputs title, meta description, robots, canonical, OpenGraph and Twitter tags."
+msgstr ""
+
+#: includes/Admin/Page.php:274
+msgid "Enable JSON-LD schema"
+msgstr ""
+
+#: includes/Admin/Page.php:274
+msgid "Adds Organization, WebSite, WebPage, Article, Product, BreadcrumbList, LocalBusiness, VideoObject and NewsArticle where data exists."
+msgstr ""
+
+#: includes/Admin/Page.php:275
+msgid "Enable social graph tags"
+msgstr ""
+
+#: includes/Admin/Page.php:275
+msgid "Uses dedicated social fields when present, otherwise falls back to title, description and image."
+msgstr ""
+
+#: includes/Admin/Page.php:276
+msgid "Transliterate new URLs"
+msgstr ""
+
+#: includes/Admin/Page.php:276
+msgid "Converts Polish, Cyrillic and accented letters in newly generated slugs to clean Latin URLs."
+msgstr ""
+
+#: includes/Admin/Page.php:277
+msgid "Title separator"
+msgstr ""
+
+#: includes/Admin/Page.php:277
+msgid "Use it in editable SEO fields with the %%sep%% variable."
+msgstr ""
+
+#: includes/Admin/Page.php:278
+msgid "Enable breadcrumb schema"
+msgstr ""
+
+#: includes/Admin/Page.php:278
+msgid "Adds BreadcrumbList JSON-LD for pages and archives."
+msgstr ""
+
+#: includes/Admin/Page.php:280
+msgid "Default title fallback"
+msgstr ""
+
+#: includes/Admin/Page.php:281
+msgid "Default description fallback"
+msgstr ""
+
+#: includes/Admin/Page.php:285
+#: includes/Admin/Page.php:645
+msgid "Recommended product title"
+msgstr ""
+
+#: includes/Admin/Page.php:286
+#: includes/Admin/Page.php:654
+msgid "Recommended product description"
+msgstr ""
+
+#: includes/Admin/Page.php:289
+msgid "Auto-fill recommended product SEO"
+msgstr ""
+
+#: includes/Admin/Page.php:289
+msgid "When a new WooCommerce product has empty SEO fields, prefill it with the recommended product title and description templates from Core SEO, if those templates are set."
+msgstr ""
+
+#: includes/Admin/Page.php:290
+msgid "Disable site indexing"
+msgstr ""
+
+#: includes/Admin/Page.php:290
+msgid "Adds global noindex to MyelophOne SEO robots meta output. Use only for staging, private or temporarily hidden sites."
+msgstr ""
+
+#: includes/Admin/Page.php:292
+msgid "Global social image"
+msgstr ""
+
+#: includes/Admin/Page.php:297
+msgid "Robots and Archives"
+msgstr ""
+
+#: includes/Admin/Page.php:298
+msgid "Add optimized WordPress robots.txt rules"
+msgstr ""
+
+#: includes/Admin/Page.php:298
+msgid "Adds the standard WordPress cleanup rules shown in the preview. Bot-specific rules below are controlled separately."
+msgstr ""
+
+#: includes/Admin/Page.php:299
+msgid "Block aggressive SEO crawlers"
+msgstr ""
+
+#: includes/Admin/Page.php:299
+msgid "Adds robots.txt rules for common high-volume SEO crawlers."
+msgstr ""
+
+#: includes/Admin/Page.php:300
+msgid "Opt out of AI training use"
+msgstr ""
+
+#: includes/Admin/Page.php:300
+msgid "Adds robots.txt rules for AI training crawlers while still allowing AI assistants to fetch public information when they identify themselves normally."
+msgstr ""
+
+#: includes/Admin/Page.php:301
+msgid "Generate XML sitemap"
+msgstr ""
+
+#: includes/Admin/Page.php:301
+msgid "Generates a sitemap index with sub-sitemaps for public post types, including custom post types."
+msgstr ""
+
+#: includes/Admin/Page.php:302
+msgid "Robots clean-param list"
+msgstr ""
+
+#: includes/Admin/Page.php:304
+msgid "Archive title fallback"
+msgstr ""
+
+#: includes/Admin/Page.php:305
+msgid "Archive description fallback"
+msgstr ""
+
+#: includes/Admin/Page.php:306
+msgid "Noindex internal search pages"
+msgstr ""
+
+#: includes/Admin/Page.php:306
+msgid "Recommended for thin internal search result pages."
+msgstr ""
+
+#: includes/Admin/Page.php:307
+msgid "Noindex author archives"
+msgstr ""
+
+#: includes/Admin/Page.php:307
+msgid "Useful for single-author sites or duplicate archive pages."
+msgstr ""
+
+#: includes/Admin/Page.php:308
+msgid "Disable author archives"
+msgstr ""
+
+#: includes/Admin/Page.php:308
+msgid "Redirect author archive URLs to the homepage to avoid thin duplicate author pages."
+msgstr ""
+
+#: includes/Admin/Page.php:309
+msgid "Noindex date archives"
+msgstr ""
+
+#: includes/Admin/Page.php:309
+msgid "Usually recommended because date archives often duplicate category and post content."
+msgstr ""
+
+#: includes/Admin/Page.php:310
+msgid "Noindex tag archives"
+msgstr ""
+
+#: includes/Admin/Page.php:310
+msgid "Enable when tag pages are thin, duplicated, or not curated."
+msgstr ""
+
+#: includes/Admin/Page.php:311
+msgid "Noindex paginated pages"
+msgstr ""
+
+#: includes/Admin/Page.php:311
+msgid "Apply noindex to page 2 and later for archives and paginated content when you do not want paginated URLs indexed."
+msgstr ""
+
+#: includes/Admin/Page.php:312
+msgid "Disable attachment URLs"
+msgstr ""
+
+#: includes/Admin/Page.php:312
+msgid "Redirect media attachment pages to their file URL or parent content to prevent thin media pages from being indexed."
+msgstr ""
+
+#: includes/Admin/Page.php:315
+msgid "Maintenance"
+msgstr ""
+
+#: includes/Admin/Page.php:316
+msgid "404 log max entries"
+msgstr ""
+
+#: includes/Admin/Page.php:317
+msgid "404 log retention days"
+msgstr ""
+
+#: includes/Admin/Page.php:319
+msgid "Misc"
+msgstr ""
+
+#: includes/Admin/Page.php:320
+msgid "Enable content include shortcode"
+msgstr ""
+
+#: includes/Admin/Page.php:320
+msgid "Adds [myelophone_content id=\"123\"] and [meph_content id=\"123\"] to insert another post, page, or custom post content. Pages that only reuse content should usually be noindex."
+msgstr ""
+
+#: includes/Admin/Page.php:321
+msgid "Enable IndexNow"
+msgstr ""
+
+#: includes/Admin/Page.php:321
+msgid "Automatically pings IndexNow-compatible search engines when public content is published or updated. The key is generated automatically."
+msgstr ""
+
+#: includes/Admin/Page.php:322
+msgid "Recommended permalink structure"
+msgstr ""
+
+#: includes/Admin/Page.php:322
+msgid "Apply /%postname%"
+msgstr ""
+
+#: includes/Admin/Page.php:332
+msgid "Recommended Settings"
+msgstr ""
+
+#: includes/Admin/Page.php:335
+msgid "Restore Defaults"
+msgstr ""
+
+#: includes/Admin/Page.php:338
+msgid "To save changes, click the \"Save Changes\" button below."
+msgstr ""
+
+#: includes/Admin/Page.php:350
+msgid "Search Engine Verification"
+msgstr ""
+
+#: includes/Admin/Page.php:352
+msgid "Add verification codes from search engines and social platforms in MyelophOne Core. Those meta tags are added to the head section."
+msgstr ""
+
+#: includes/Admin/Page.php:355
+msgid "Open verification settings"
+msgstr ""
+
+#: includes/Admin/Page.php:363
+msgid "SOS notifications"
+msgstr ""
+
+#: includes/Admin/Page.php:364
+msgid "Telegram bot token"
+msgstr ""
+
+#: includes/Admin/Page.php:365
+msgid "Telegram chat ID"
+msgstr ""
+
+#: includes/Admin/Page.php:366
+msgid "Slack webhook URL"
+msgstr ""
+
+#: includes/Admin/Page.php:369
+msgid "Daily checks"
+msgstr ""
+
+#: includes/Admin/Page.php:371
+msgid "WordPress cron is disabled"
+msgstr ""
+
+#: includes/Admin/Page.php:374
+msgid "URLs to monitor daily"
+msgstr ""
+
+#: includes/Admin/Page.php:374
+msgid "Add one URL per line. MyelophOne SEO alerts when a URL does not return HTTP 200."
+msgstr ""
+
+#: includes/Admin/Page.php:376
+msgid "Check sitemap for spam links"
+msgstr ""
+
+#: includes/Admin/Page.php:376
+msgid "Alerts when the sitemap contains obvious spam patterns or external suspicious links."
+msgstr ""
+
+#: includes/Admin/Page.php:377
+msgid "Sitemap inflation alert"
+msgstr ""
+
+#: includes/Admin/Page.php:377
+msgid "Alerts when sitemap URL count grows by more than 50% or by more than 100 URLs compared with the previous daily check."
+msgstr ""
+
+#: includes/Admin/Page.php:378
+#: includes/Plugin.php:430
+msgid "SEO quarantine mode"
+msgstr ""
+
+#: includes/Admin/Page.php:378
+msgid "Returns 503 for normal public pages while leaving 404 and other error responses untouched."
+msgstr ""
+
+#: includes/Admin/Page.php:381
+msgid "Request guard"
+msgstr ""
+
+#: includes/Admin/Page.php:382
+msgid "Block empty user agents"
+msgstr ""
+
+#: includes/Admin/Page.php:382
+msgid "Blocks requests without a User-Agent header. Keep disabled if you expect legacy clients."
+msgstr ""
+
+#: includes/Admin/Page.php:383
+msgid "Block suspicious non-browser user agents"
+msgstr ""
+
+#: includes/Admin/Page.php:383
+msgid "Blocks obvious scripted or malformed agents while trying to avoid rare real browsers."
+msgstr ""
+
+#: includes/Admin/Page.php:384
+msgid "Block popular crawlers"
+msgstr ""
+
+#: includes/Admin/Page.php:384
+msgid "Blocks selected high-volume crawlers at request time. Use carefully."
+msgstr ""
+
+#: includes/Admin/Page.php:398
+msgid "Organization and Social Graph"
+msgstr ""
+
+#: includes/Admin/Page.php:402
+msgid "Organization name"
+msgstr ""
+
+#: includes/Admin/Page.php:403
+msgid "Organization logo"
+msgstr ""
+
+#: includes/Admin/Page.php:404
+msgid "Local business schema type"
+msgstr ""
+
+#: includes/Admin/Page.php:405
+msgid "Local phone"
+msgstr ""
+
+#: includes/Admin/Page.php:406
+msgid "Local address"
+msgstr ""
+
+#: includes/Admin/Page.php:407
+msgid "SameAs profile URLs"
+msgstr ""
+
+#: includes/Admin/Page.php:407
+msgid "Add one profile URL per line, for example your official social media, marketplace, directory, or organization pages."
+msgstr ""
+
+#: includes/Admin/Page.php:410
+msgid "Organization preview"
+msgstr ""
+
+#. translators: %d: number of hidden SameAs profile links.
+#. translators: %d: number of hidden profile links.
+#: includes/Admin/Page.php:425
+#: includes/Plugin.php:143
+#, php-format
+msgid "+%d more"
+msgstr ""
+
+#: includes/Admin/Page.php:454
+msgid "Old URL"
+msgstr ""
+
+#: includes/Admin/Page.php:454
+msgid "New URL"
+msgstr ""
+
+#: includes/Admin/Page.php:454
+msgid "Status"
+msgstr ""
+
+#: includes/Admin/Page.php:454
+msgid "Actions"
+msgstr ""
+
+#: includes/Admin/Page.php:468
+msgid "Remove"
+msgstr ""
+
+#: includes/Admin/Page.php:477
+msgid "Remove deletes the row from this form. Click Save redirects to apply changes."
+msgstr ""
+
+#: includes/Admin/Page.php:479
+msgid "Save redirects"
+msgstr ""
+
+#: includes/Admin/Page.php:498
+msgid "URL"
+msgstr ""
+
+#: includes/Admin/Page.php:498
+msgid "Hits"
+msgstr ""
+
+#: includes/Admin/Page.php:498
+msgid "Last seen"
+msgstr ""
+
+#: includes/Admin/Page.php:498
+msgid "Referrer host"
+msgstr ""
+
+#: includes/Admin/Page.php:501
+msgid "No 404 results logged yet."
+msgstr ""
+
+#: includes/Admin/Page.php:517
+msgid "Clear 404 log"
+msgstr ""
+
+#: includes/Admin/Page.php:531
+msgid "Shopify"
+msgstr ""
+
+#: includes/Admin/Page.php:532
+msgid "Use these Shopify-native snippets as a ready integration pack: add the head snippet to theme.liquid and the robots rules to robots.txt.liquid. The Liquid code keeps canonical, descriptions and OpenGraph aligned with Shopify data instead of hard-coded WordPress values."
+msgstr ""
+
+#: includes/Admin/Page.php:533
+msgid "theme.liquid head snippet"
+msgstr ""
+
+#: includes/Admin/Page.php:540
+msgid "robots.txt.liquid additions"
+msgstr ""
+
+#: includes/Admin/Page.php:579
+#: includes/Plugin.php:140
+msgid "Enabled"
+msgstr ""
+
+#: includes/Admin/Page.php:579
+#: includes/Plugin.php:141
+msgid "Disabled"
+msgstr ""
+
+#: includes/Admin/Page.php:628
+msgid "Recommended product templates language"
+msgstr ""
+
+#: includes/Admin/Page.php:691
+#: includes/MetaBox.php:231
+msgid "Select"
+msgstr ""
+
+#. translators: %s: linked author username.
+#: includes/Admin/Page.php:749
+#, php-format
+msgid "If MyelophOne SEO saves you time, you can support the author %s."
+msgstr ""
+
+#: includes/Admin/Page.php:793
+#: includes/MetaBox.php:335
+msgid "[%%brand%% ? \"(%%brand%%)\" : \"\"] and [%%price%% ?? \"\"] are supported."
+msgstr ""
+
+#: includes/Admin/Page.php:807
+#: includes/Admin/Page.php:820
+#: includes/Admin/Page.php:832
+#: includes/Redirects.php:202
+#: includes/Redirects.php:239
+msgid "Permission denied."
+msgstr ""
+
+#: includes/Elementor.php:77
+#: includes/Elementor.php:98
+msgid "MyelophOne"
+msgstr ""
+
+#: includes/Elementor.php:156
+#: includes/MetaBox.php:63
+msgid "SEO title"
+msgstr ""
+
+#: includes/Elementor.php:159
+msgid "SEO-only title. It does not change Elementor page titles or heading widgets."
+msgstr ""
+
+#: includes/Elementor.php:163
+#: includes/MetaBox.php:64
+msgid "SEO excerpt"
+msgstr ""
+
+#: includes/Elementor.php:166
+msgid "Used by the %%excerpt%% variable before the WordPress excerpt or page content fallback."
+msgstr ""
+
+#: includes/Elementor.php:170
+#: includes/MetaBox.php:65
+msgid "SEO description"
+msgstr ""
+
+#: includes/Elementor.php:173
+msgid "SEO-only meta description. Social description can override it for OpenGraph and Twitter tags."
+msgstr ""
+
+#: includes/Elementor.php:177
+#: includes/MetaBox.php:66
+msgid "Primary image"
+msgstr ""
+
+#: includes/Elementor.php:182
+msgid "SEO image override. If empty, MyelophOne SEO can fall back to the featured image."
+msgstr ""
+
+#: includes/Elementor.php:186
+#: includes/MetaBox.php:67
+msgid "Social title"
+msgstr ""
+
+#: includes/Elementor.php:192
+#: includes/MetaBox.php:68
+msgid "Social description"
+msgstr ""
+
+#: includes/Elementor.php:198
+#: includes/MetaBox.php:69
+msgid "Social image"
+msgstr ""
+
+#: includes/Elementor.php:203
+msgid "Social image override. If empty, social tags can fall back to the primary SEO image or featured image."
+msgstr ""
+
+#: includes/Elementor.php:207
+msgid "Noindex"
+msgstr ""
+
+#: includes/Elementor.php:214
+msgid "Disable comments"
+msgstr ""
+
+#: includes/Elementor.php:252
+msgid "Available variables"
+msgstr ""
+
+#: includes/Elementor/Copyright/Widget.php:21
+msgid "Copyright"
+msgstr ""
+
+#: includes/Elementor/Copyright/Widget.php:47
+msgid "Content"
+msgstr ""
+
+#: includes/Elementor/Copyright/Widget.php:51
+msgid "Owner"
+msgstr ""
+
+#: includes/Elementor/Copyright/Widget.php:57
+msgid "Start year"
+msgstr ""
+
+#: includes/Elementor/Copyright/Widget.php:63
+msgid "Rights text"
+msgstr ""
+
+#: includes/Elementor/Copyright/Widget.php:65
+msgid "All rights reserved."
+msgstr ""
+
+#: includes/MetaBox.php:81
+msgid "Google preview"
+msgstr ""
+
+#: includes/MetaBox.php:85
+msgid "Social preview"
+msgstr ""
+
+#: includes/MetaBox.php:108
+msgid "Noindex this page"
+msgstr ""
+
+#: includes/MetaBox.php:108
+msgid "Ask search engines not to index this URL while still following links."
+msgstr ""
+
+#: includes/MetaBox.php:109
+msgid "Disable comments for this content"
+msgstr ""
+
+#: includes/MetaBox.php:109
+msgid "Closes comments and pingbacks only for this post, page, product, or custom post type entry."
+msgstr ""
+
+#: includes/MetaBox.php:208
+msgid "Use recommended product template"
+msgstr ""
+
+#: includes/MetaBox.php:288
+msgid "Laptop"
+msgstr ""
+
+#: includes/MetaBox.php:288
+msgid "Mobile"
+msgstr ""
+
+#: includes/Plugin.php:190
+#: includes/Variables.php:70
+msgid "In stock"
+msgstr ""
+
+#: includes/Plugin.php:190
+#: includes/Variables.php:71
+msgid "Out of stock"
+msgstr ""
+
+#: includes/Plugin.php:343
+msgid "Yoast SEO is active. MyelophOne SEO can conflict with Yoast metadata, canonical URLs, schema, breadcrumbs, redirects, or robots rules. Disable duplicated features in one plugin."
+msgstr ""
+
+#: includes/Plugin.php:363
+msgid "SEO Settings"
+msgstr ""
+
+#: includes/Plugin.php:394
+msgid "WordPress cron is disabled."
+msgstr ""
+
+#: includes/Plugin.php:396
+msgid "Daily checks are not scheduled yet."
+msgstr ""
+
+#. translators: %d: number of URLs configured for daily monitoring.
+#: includes/Plugin.php:401
+#, php-format
+msgid "%d monitored URL"
+msgid_plural "%d monitored URLs"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/Plugin.php:405
+msgid "sitemap checks enabled"
+msgstr ""
+
+#: includes/Plugin.php:411
+msgid "SEO health"
+msgstr ""
+
+#: includes/Plugin.php:414
+msgid "404 URLs logged."
+msgstr ""
+
+#. translators: %s: total number of logged 404 hits.
+#: includes/Plugin.php:419
+#, php-format
+msgid "Total hits: %s"
+msgstr ""
+
+#: includes/Plugin.php:426
+msgid "Open 404 Stats"
+msgstr ""
+
+#: includes/Plugin.php:431
+msgid "Public pages return 503 until quarantine is disabled."
+msgstr ""
+
+#: includes/Plugin.php:436
+msgid "Global NoIndex"
+msgstr ""
+
+#: includes/Plugin.php:437
+msgid "Search engines are being asked not to index this site."
+msgstr ""
+
+#: includes/Schema.php:296
+msgid "Home"
+msgstr ""
+
+#: includes/SOS.php:76
+msgid "MyelophOne SEO quarantine mode is active. Public pages are returning 503."
+msgstr ""
+
+#. translators: %s: root file name.
+#: includes/SOS.php:133
+#, php-format
+msgid "Root file size changed: %s"
+msgstr ""
+
+#. translators: %s: suspicious root file name.
+#: includes/SOS.php:145
+#, php-format
+msgid "Suspicious root file found: %s"
+msgstr ""
+
+#. translators: 1: monitored URL, 2: returned HTTP status code.
+#: includes/SOS.php:165
+#, php-format
+msgid "Monitored URL is not 200: %1$s returned %2$d"
+msgstr ""
+
+#: includes/SOS.php:185
+msgid "Sitemap contains suspicious spam-like URLs."
+msgstr ""
+
+#. translators: 1: previous sitemap URL count, 2: current sitemap URL count.
+#: includes/SOS.php:192
+#, php-format
+msgid "Sitemap URL count increased sharply: %1$d to %2$d."
+msgstr ""
+
+#. translators: %s: Product minimum price
+#: includes/Variables.php:364
+#: includes/Variables.php:382
+#, php-format
+msgid "from %s"
+msgstr ""
+
+#: myelophone-seo.php:103
+msgid "MyelophOne SEO requires MyelophOne Core to be installed and active."
+msgstr ""
+
+#: myelophone-seo.php:122
+msgid "MyelophOne SEO requires MyelophOne Core. Activate Core first, then activate SEO."
+msgstr ""
