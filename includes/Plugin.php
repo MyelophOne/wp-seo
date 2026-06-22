@@ -68,6 +68,7 @@ class MephSeo_Plugin
 		add_action("admin_init", [$this->settings, "register_settings"]);
 		add_action("admin_enqueue_scripts", [$this, "enqueue_admin_assets"]);
 		add_action("admin_notices", [$this, "yoast_conflict_notice"]);
+		add_action("wp_dashboard_setup", [$this, "register_dashboard_widget"]);
 		add_action(
 			"myelophone_dashboard_widget_sections",
 			[$this, "render_dashboard_widget_section"],
@@ -390,6 +391,36 @@ class MephSeo_Plugin
 		array_unshift($links, $settings_link);
 
 		return $links;
+	}
+
+	/**
+	 * Register SEO dashboard widget on the main WordPress dashboard.
+	 *
+	 * @return void
+	 */
+	public function register_dashboard_widget()
+	{
+		if (!current_user_can("manage_options")) {
+			return;
+		}
+
+		wp_add_dashboard_widget(
+			"myelophone_seo_dashboard_widget",
+			__("MyelophOne SEO", "myelophone-seo"),
+			[$this, "render_dashboard_widget"],
+		);
+	}
+
+	/**
+	 * Render standalone SEO dashboard widget.
+	 *
+	 * @return void
+	 */
+	public function render_dashboard_widget()
+	{
+		echo '<div class="meph-seo-dashboard-widget">';
+		$this->render_dashboard_widget_section();
+		echo "</div>";
 	}
 
 	/**
